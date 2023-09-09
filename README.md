@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Live Links
 
-GitHub-[click here](https://github.com/rahulvr29/form-validation-react.git)
+GitHub-[click here](https://github.com/rahulvr29/product-list-app-react)
 
 Live URL-[click here](https://form-validation-react-lac.vercel.app/)
 
