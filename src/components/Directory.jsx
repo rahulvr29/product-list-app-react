@@ -1,6 +1,6 @@
 import React from 'react';
-import './directory.styles.scss';
-import ListItem from '../list-item/list-item.component';
+import './directory.css';
+import ListItem from './ListItems';
 
 function Directory({ products }) {
     return (

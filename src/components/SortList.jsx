@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import './sort-list.styles.scss';
+import './sort-list.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import { CategoryContext } from '../../context/category-context';
+import { CategoryContext } from '../context/category-context';
 
 function SortList() {
     const { priceOrder, setPriceOrder, ratingOrder, setRatingOrder } = useContext(CategoryContext);
@@ -41,13 +41,14 @@ function SortList() {
         <div className='sort-features'>
             <span>Sort by</span>
             <button className="price-sort" onClick={handlePriceSort}>
-                Price {priceOrder === '' ? '' : 
+                <span className='list'>Price </span>{priceOrder === '' ? '' : 
                 (priceOrder === 'asc' ? <FontAwesomeIcon icon={faArrowUp} className='icon' /> : 
                 <FontAwesomeIcon icon={faArrowDown} className='icon' />)}
             </button>
 
             <button className="rating-sort" onClick={handleRatingSort}>
-                Rating {ratingOrder === '' ? '' : 
+                <span className='list'>Rating</span>
+                {ratingOrder === '' ? '' : 
                 (ratingOrder === 'asc' ? <FontAwesomeIcon icon={faArrowUp} className='icon' /> : 
                 <FontAwesomeIcon icon={faArrowDown} className='icon' />)}
             </button>

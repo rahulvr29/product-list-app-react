@@ -50,7 +50,7 @@ const products = [
     {
         id: 7,
         productName: 'Sony Headphones',
-        productImageURL: '/assets/sony_headphones.png',
+        productImageURL: "/assets/sony_headphones.png",
         productCategory: 'Electronics',
         productPrice: '249',
         productRating: '3.5'

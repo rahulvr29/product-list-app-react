@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
-import Navbar from './components/navbar/navbar.component';
-import Directory from './components/directory/directory.component';
+import Navbar from './components/Navbar';
+import Directory from './components/Directory';
 import { CategoryContext } from './context/category-context';
-import SearchBar from './components/search-bar/search-bar.component';
-import SortList from './components/sort-list/sort-list.component';
+import SearchBar from './components/SearchBar';
+import SortList from './components/SortList';
 
 function App() {
     const { listOfProducts } = useContext(CategoryContext);
 
     return (
         <>
-            <Navbar />
+            <Navbar/>
 
             <SearchBar />
 

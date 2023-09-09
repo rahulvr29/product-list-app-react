@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import './category-filter.styles.scss';
-import { CategoryContext } from '../../context/category-context';
+import './category-filter.css';
+import { CategoryContext } from '../context/category-context';
 
 function CategoryFilter() {
     const { categories, selectedCategory, setSelectedCategory } = useContext(CategoryContext);
@@ -17,7 +17,9 @@ function CategoryFilter() {
                 value={selectedCategory} 
                 onChange={handleCategorySelection}
             >
-                <option value="">--Select a category--</option>
+                <option value="">
+                    <span className='option-value'>--Select a category--</span>
+                    </option>
                 {categories.map(category => 
                     <option 
                         key={category.id} 
