@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 GitHub-[click here](https://github.com/rahulvr29/product-list-app-react)
 
-Live URL-[click here](https://form-validation-react-lac.vercel.app/)
+Live URL-[click here](https://product-list-app-react.vercel.app/)
 
 ## Available Scripts
 
